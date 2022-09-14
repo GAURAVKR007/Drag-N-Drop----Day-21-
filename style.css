@@ -1,15 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap'); */
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Muli',sans-serif;
+    /* font-family: 'Muli',sans-serif; */
     display: flex;
     margin: 0;
+    background-color: steelblue;
     align-items: center;
     height: 100vh;
     overflow: hidden;
     justify-content: center;
+}
+
+.empty {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: solid 3px black;
+    background: white;
+}
+
+.fill {
+    background-image: url('https://www.capitalmind.in/wp-content/uploads/2016/05/150px-Crompton_Greaves_Logo.svg.png');
+    height: 145px;
+    width: 145px;
+    cursor: pointer;
+}
+
+
+.hold {
+    border: solid 5px #ccc;
+}
+
+.hovered {
+    background-color: #333;
+    border-color: #fff;
+    border-style: dashed;
+}
+
+
+@media(max-width: 800px){
+    body{
+        flex-direction: column;
+    }
 }
